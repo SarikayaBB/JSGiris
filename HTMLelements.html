@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements</title>
+  </head>
+  <body>
+    <ul>
+      <li class="kirmiziMeyve">Elma</li>
+      <li class="kirmiziMeyve">Çilek</li>
+      <li class="yesilMeyve">Armut</li>
+      <li class="yesilMeyve">Avakado</li>
+      <li class="kirmiziMeyve">Kiraz</li>
+      <li class="yesilMeyve">Erik</li>
+    </ul>
+
+    <script type="text/javascript">
+      var kirmiziMeyveler = document.getElementsByClassName("kirmiziMeyve");
+      var yesilMeyveler = document.getElementsByClassName("yesilMeyve");
+
+      for (kirmiziMeyve of kirmiziMeyveler) {
+        kirmiziMeyve.style.color = "red";
+        kirmiziMeyve.style.fontSize = "3rem";
+        kirmiziMeyve.style.fontFamily = "Impact,Charcoal,sans-serif";
+        kirmiziMeyve.style.textAlign = "center";
+      }
+      for (yesilMeyve of yesilMeyveler) {
+        yesilMeyve.style.color = "green";
+        yesilMeyve.style.fontSize = "3rem";
+        yesilMeyve.style.fontFamily = "Montserrat,sans-serif";
+        yesilMeyve.style.textAlign = "right";
+      }
+    </script>
+  </body>
+</html>
