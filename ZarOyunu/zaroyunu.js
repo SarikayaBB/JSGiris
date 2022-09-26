@@ -3,11 +3,15 @@ var container = document.getElementById("container1");
 // var btnZarAt = document.getElementById("btnZarAt");
 // btnZarAt.addEventListener("click", zarla);
 
-document.addEventListener("keydown", (event) => {
-  if (event.key == "x") {
+document.addEventListener("keydown", function(event){  // (event) => da denilebilirdi
+  if (event.key == "x" ||event.key == "f") {
     zarla();
   }
 });
+
+// document.getElementById("baslik").addEventListener("mouseover",zarla); //zar atmayi baslik uzerinde gectikce yapan eventlistener // html icinde h1 kisminda mouseover="zarla()" yazarak da yapabilirdik.
+
+
 //btnZarAt.addEventListener("click",function(){
 
 //zarla("asdsa"")       parametleri fonksiyon cagirma
