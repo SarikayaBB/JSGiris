@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Sayi</title>
+  </head>
+
+  <body>
+    <script>
+      loto();
+      function loto() {
+        var kullaniciSayi = window.prompt("Sayi giriniz: ");
+
+        if (kullaniciSayi >= 1 && kullaniciSayi <= 10) {
+        maxUretilen = 10;
+        }
+        if (kullaniciSayi > 10 && kullaniciSayi < 100) {
+          maxUretilen = 100;
+        }
+        var uretilen = rastgele(1, maxUretilen);
+
+        if (kullaniciSayi == uretilen) {
+          alert("Sansli gununuz!");
+        } else {
+          alert("Bilemediniz, rastgele sayi: " + uretilen);
+          loto();
+        }
+      }
+      function rastgele(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+    </script>
+  </body>
+</html>
