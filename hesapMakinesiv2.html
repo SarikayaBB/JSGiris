@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="form-group row">
+        <div class="col-sm-3">
+            <div class="form-group">
+            <input type="text" id="txtScreen" class="form-control-lg" style="width: 190px;"  id="">
+        </div>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-sm-3">
+        <a onclick="sendValue(this)" class="btn btn-primary btn-lg" href="#" role="button">1</a>
+        <a  onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">2</a>
+        <a  onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">3</a>
+        <a onclick="sendValue(this)"  class="btn btn-warning  btn-lg" href="#" role="button">+</a>
+    
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <a onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">4</a>
+        <a onclick="sendValue(this)" class="btn btn-primary btn-lg" href="#" role="button">5</a>
+        <a onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">6</a>
+        <a onclick="sendValue(this)" class="btn btn-warning  btn-lg" href="#" role="button"> - </a>
+       
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <a onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">7</a>
+        <a onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">8</a>
+        <a onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">9</a>
+        <a onclick="sendValue(this)" class="btn btn-warning  btn-lg" href="#" role="button">*</a>
+      
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <a id="btnC" onclick="sendValue(this)" class="btn btn-success  btn-lg" href="#" role="button">C</a>
+        <a onclick="sendValue(this)" class="btn btn-primary  btn-lg" href="#" role="button">0</a>
+        <a id="btnEsittir" onclick="sendValue(this)" class="btn btn-danger  btn-lg" href="#" role="button">=</a>
+        <a onclick="sendValue(this)" class="btn btn-warning  btn-lg" href="#" role="button">/</a>
+      
+    </div>
+</div>
+
+</div>
+    <script src="hesapMakinesiv2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

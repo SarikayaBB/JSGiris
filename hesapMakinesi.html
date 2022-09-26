@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+          
+            <div>
+            <input type="text" class="output" id = "OutputOfOperation">    
+            </div>
+
+            <ul class="first-row"> 
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">1</button>
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">2</button>
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">3</button> 
+                <button id="plusOP" onclick= "returnValue(this)" type="button" class="btn btn-lg btn-warning">+</button>
+            </ul>
+           <ul class="second-row"> 
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">4</button>
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">5</button>
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">6</button> 
+                <button id = "minusOP" onclick= "returnValue(this)" type="button" class="btn  btn-lg btn-warning">-</button>
+           </ul>
+            <ul class="third-row">
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">7</button>
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">8</button>
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">9</button>
+                <button id = "divOP"onclick= "returnValue(this)" type="button" class="btn btn-lg btn-warning">/</button>
+            </ul>
+            <ul class="forth-row">
+                <button id="clearBTN" onclick= "returnValue(this)" type="button" class="btn btn-success">C</button>
+                <button onclick= "returnValue(this)" type="button" class="btn btn-primary">0</button>
+                <button id = "equalBTN" onclick= "returnValue(this)" type="button" class="btn btn-danger">=</button>
+                <button id = "multOP" onclick= "returnValue(this)" type="button" class="btn btn-lg btn-warning">*</button>
+            </ul>
+   
+            
+        </div>
+    </div>
+    
+    
+    <script src = hesapMakinesi.js></script>
+    <script type="text/javascript" src="aritmetik.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+</html>
