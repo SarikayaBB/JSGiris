@@ -21,40 +21,54 @@
 document.addEventListener("keydown", (event) => {
   sesKlavye(event.key);
 });
-var buttons = document.getElementsByTagName("button");
 
-for (let i = 0; buttons.length; i++) {
-  buttons[i].addEventListener("click", function () {
-    sesTiklama(buttons[i].id);
+// for(let i=1;i<5;i++){
+//   console.log(i);
+// }
+// i++;
+// console.log(i);
+
+var buttons = document.getElementsByTagName("button");
+// console.log(buttons[6].id);
+for (let button of buttons) {
+  button.addEventListener("click", function () {
+    console.log(button.id);
+    sesTiklama(button.id);
   });
 }
+for (let button of buttons) {
+  button.addEventListener("mouseover", function (event) {
+    sesTiklama(button.id);
+  });
+}
+
+// for (let i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener("click", function () {
+//     sesTiklama(buttons[i].id);
+//     console.log(buttons[i].id);
+//   });
+// }
 
 function sesTiklama(id) {
   if (id == "w") {
     var audioW = new Audio("sounds/crash.mp3");
     audioW.play();
-  }
-  if (id == "a") {
+  } else if (id == "a") {
     var audioA = new Audio("sounds/kick-bass.mp3");
     audioA.play();
-  }
-  if (id == "s") {
+  } else if (id == "s") {
     var audioS = new Audio("sounds/snare.mp3");
     audioS.play();
-  }
-  if (id == "d") {
+  } else if (id == "d") {
     var audioD = new Audio("sounds/tom-1.mp3");
     audioD.play();
-  }
-  if (id == "j") {
+  } else if (id == "j") {
     var audioJ = new Audio("sounds/tom-2.mp3");
     audioJ.play();
-  }
-  if (id == "k") {
+  } else if (id == "k") {
     var audioK = new Audio("sounds/tom-3.mp3");
     audioK.play();
-  }
-  if (id == "l") {
+  } else if (id == "l") {
     var audioL = new Audio("sounds/tom-4.mp3");
     audioL.play();
   }
