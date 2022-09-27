@@ -20,6 +20,7 @@
 // }
 document.addEventListener("keydown", (event) => {
   sesKlavye(event.key);
+  console.log(event.key);
 });
 
 // for(let i=1;i<5;i++){
@@ -29,7 +30,7 @@ document.addEventListener("keydown", (event) => {
 // console.log(i);
 
 var buttons = document.getElementsByTagName("button");
-// console.log(buttons[6].id);
+
 for (let button of buttons) {
   button.addEventListener("click", function () {
     console.log(button.id);
@@ -75,31 +76,59 @@ function sesTiklama(id) {
 }
 function sesKlavye(tus) {
   if (tus == "w") {
+    document.getElementById(tus).classList.add("pressed");
     var audioW = new Audio("sounds/crash.mp3");
     audioW.play();
+    setTimeout(function () {
+      document.getElementById(tus).classList.remove("pressed");
+    }, 1000);
   }
   if (tus == "a") {
+    document.getElementById(tus).classList.add("pressed");
     var audioA = new Audio("sounds/kick-bass.mp3");
     audioA.play();
+    setTimeout(function () {
+      document.getElementById(tus).classList.remove("pressed");
+    }, 1000);
   }
   if (tus == "s") {
+    document.getElementById(tus).classList.add("pressed");
     var audioS = new Audio("sounds/snare.mp3");
     audioS.play();
+    setTimeout(function () {
+      document.getElementById(tus).classList.remove("pressed");
+    }, 1000);
   }
   if (tus == "d") {
+    document.getElementById(tus).classList.add("pressed");
     var audioD = new Audio("sounds/tom-1.mp3");
     audioD.play();
+    setTimeout(function () {
+      document.getElementById(tus).classList.remove("pressed");
+    }, 1000);
   }
   if (tus == "j") {
+    document.getElementById(tus).classList.add("pressed");
     var audioJ = new Audio("sounds/tom-2.mp3");
     audioJ.play();
+    setTimeout(function () {
+      document.getElementById(tus).classList.remove("pressed");
+    }, 1000);
   }
   if (tus == "k") {
+    document.getElementById(tus).classList.add("pressed");
     var audioK = new Audio("sounds/tom-3.mp3");
     audioK.play();
+    setTimeout(function () {
+      document.getElementById(tus).classList.remove("pressed");
+    }, 1500);
   }
   if (tus == "l") {
+    document.getElementById(tus).classList.add("pressed");
     var audioL = new Audio("sounds/tom-4.mp3");
     audioL.play();
+    setTimeout(function () {
+      document.getElementById(tus).classList.remove("pressed");
+    }, 1000);
   }
 }
